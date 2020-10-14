@@ -1,0 +1,7 @@
+{
+    "name": "hdos-drews",
+    "version": "1.0.0",
+    "bin": {
+        "drews": "index.js"
+    }
+}
