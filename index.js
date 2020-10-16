@@ -1,9 +1,16 @@
 #!/usr/bin/env node
 
 const clearConsole = require("clear-any-console");
+const pgkJSON = require("./package.json");
 
 // Clears the console.
 clearConsole();
+
+console.log(`
+NAME: ${pgkJSON.name}
+VERSION: ${pgkJSON.version}
+DESCRIPTION: ${pgkJSON.description}
+`);
 
 console.log(`
 Helge Drews - Software Engineer - Open Sourcerer 🦊
