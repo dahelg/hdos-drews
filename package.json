@@ -2,6 +2,10 @@
     "name": "hdos-drews",
     "version": "1.0.0",
     "bin": {
-        "drews": "index.js"
+        "drews": "index.js",
+        "hdos-drews": "index.js"
+    },
+    "dependencies": {
+        "clear-any-console": "^1.16.2"
     }
 }
