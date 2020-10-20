@@ -8,5 +8,11 @@
     },
     "dependencies": {
         "cli-welcome": "^2.2.2"
-    }
+    },
+    "keywords": [
+        "helge drews",
+        "helge",
+        "drews",
+        "lübeck"
+    ]
 }
