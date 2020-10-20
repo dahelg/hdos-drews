@@ -14,5 +14,13 @@
         "helge",
         "drews",
         "lübeck"
-    ]
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "repository": "dahelg/hdos-drews",
+    "author": {
+        "name": "Helge Drews",
+        "email": "dev@hdrews.de",
+        "url": "https://twitter.com/helgedrews"
+    }
 }
