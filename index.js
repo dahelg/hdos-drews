@@ -2,32 +2,53 @@
 
 const pgkJSON = require("./package.json");
 const welcome = require("cli-welcome");
+const chalk = require("chalk");
+const log = console.log;
+const { dim, italic } = chalk;
+const chalkStyle = (hexColor) => chalk.hex(hexColor).bold.inverse;
+
+const COLOR = {
+    CUSTOM_A: `#3DD430`,
+    CUSTOM_B: `#F888FA`,
+    DREWS: `#3350AD`,
+    GITHUB: `#6CC644`,
+    TWITTER: `#1DA1F2`,
+};
+
+const customStyleA = chalkStyle(COLOR.CUSTOM_A);
+const customStyleB = chalkStyle(COLOR.CUSTOM_B);
+
+const twitterStyle = chalkStyle(COLOR.TWITTER);
+const githubStyle = chalkStyle(COLOR.GITHUB);
+const drewsStyle = chalkStyle(COLOR.DREWS).bgMagentaBright;
 
 welcome({
-    title: `hdos-drews`,
+    title: `Helge Drews 👨‍💻`,
     tagLine: `Nice to meet you!`,
-    bgColor: `#3150AE`,
-    color: `#F9E3E2`,
+    bgColor: COLOR.DREWS,
+    color: `#FAE3E3`,
     bold: true,
     clear: true,
     version: pgkJSON.version,
     description: pgkJSON.description,
 });
 
-console.log(`
+log(`
 NAME: ${pgkJSON.name}
 VERSION: ${pgkJSON.version}
 DESCRIPTION: ${pgkJSON.description}
 `);
 
-console.log(`
-Helge Drews - Software Engineer - Open Sourcerer 🦊
+log(`
+->>> ${customStyleA(`Software Engineer`)} 🛠    ->>> ${customStyleB(
+    `Open Sourcerer`
+)} 🔓🦊
 
-Hello! 👋😃 I'm Helge, a full-stack software engineer focused on web development.
-I’m currently working on Jamstack webpages built with ES6, React, No de.js, Contentful, AWS and a lot of other third party services.
-I also use Python 🐍 for webdev and for RaspberryPi fun.
+${italic(`Hello! 👋😃 I'm Helge, a full-stack software engineer focused on web development.
+I’m currently working on Jamstack webpages built with ES6, React, Node.js, Contentful, AWS and a lot of other third party services.
+I also use Python 🐍 for WebDev and for RaspberryPi fun. 🥳`)}
 
-🕊  Twitter: https://twitter.com/helgedrews
-🐙 GitHub: https://github.com/dahelg
-🌍 Website: https://hdrews.de/
+🐦 ${twitterStyle(` Twitter `)}: ${dim(`https://twitter.com/helgedrews`)}
+🐙 ${githubStyle(` GitHub `)}: ${dim(`https://github.com/dahelg`)}
+🏠 ${drewsStyle(` Website `)}: ${dim(`https://hdrews.de/`)}
 `);
