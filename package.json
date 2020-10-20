@@ -1,6 +1,6 @@
 {
     "name": "hdos-drews",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "description": "Get to know Helge Drews via `npx hdos-drews`.",
     "bin": {
         "drews": "index.js",
