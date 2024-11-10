@@ -48,7 +48,7 @@ ${italic(`Hello! 👋😃 I'm Helge, a full-stack software engineer focused on w
 I’m currently working on Jamstack webpages built with ES6, React, Node.js, Contentful, AWS and a lot of other third party services.
 I also use Python 🐍 for WebDev and for RaspberryPi fun. 🥳`)}
 
-🐦 ${twitterStyle(` Twitter `)}: ${dim(`https://twitter.com/helgedrews`)}
+🐦 ${twitterStyle(` Twitter `)}: ${dim(`https://x.com/helgedrews`)}
 🐙 ${githubStyle(` GitHub `)}: ${dim(`https://github.com/dahelg`)}
-🏠 ${drewsStyle(` Website `)}: ${dim(`https://hdrews.de/`)}
+🏠 ${drewsStyle(` Website `)}: ${dim(`https://www.hdrews.de/`)}
 `);
